@@ -1,0 +1,264 @@
+/* easier rem calculation */
+html{
+    font-size: 10px;
+}
+
+/* color palette*/
+
+:root{
+    --clr-pri1:#00c5ff;
+    --clr-pri2:#30CFFC;
+    --clr-pri3:#07C8FF;
+    --clr-pri4:#00C7FF;
+    --clr-pri5:#0089B0;
+    --clr-pri6:#006785;
+    --clr-sec1:#FFBF2A;
+    --clr-sec2:#FFB300;
+    --clr-sec3:#D59500;
+    --clr-sec4:#FF2300;
+    --clr-sec5:#FF472A;
+    --clr-sec6:#D51D00;
+    --clr-comp1:#FF8100;
+    --clr-comp2:#FF952A ;
+    --clr-comp3:#D56C00;
+   
+}
+
+/* universal styles */
+body{
+font-family: 'Nunito', sans-serif;
+background-color: var(--clr-pri1);
+}
+
+section{
+    scroll-margin-top: 5rem;
+    margin-top: 5rem;
+
+}
+
+p{
+    font-size: 2rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: rgb(248, 248, 248);
+    text-decoration: 3px underline var(--clr-comp1);
+}
+
+h2>.italic{
+    font-style: italic;
+
+}
+
+img{
+    display: block;
+}
+
+/* navbar styling */
+
+#topNav{
+    font-size: 2.5rem;
+    color:black;
+   
+border-bottom: 1px solid;
+border-image-source:  linear-gradient(90deg,#d56c00 0%, #ffff00 40%, #ff8100 80%);
+border-image-slice: 4;
+
+}
+
+#topNav>.navbar-brand{
+    font-size:2.2rem;
+    text-transform: uppercase;
+    color:rgb(35, 35, 35);
+}
+
+
+
+#topNav>.navbar-brand>span{
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+#topNav>.navbar-brand>.hex{
+    font-size: 2.5rem;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.6);
+}
+
+
+
+.navbar-light .navbar-nav .nav-link{
+    text-transform: uppercase;
+color:rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+color:var(--clr-sec1);
+text-decoration: underline;
+
+}
+
+
+
+.navbar-light .navbar-nav .nav-link:active{
+color:var(--clr-sec2);
+
+
+}
+ 
+
+.navbar-light>.navbar-toggler {
+   color:black;
+    border:1px solid var(--clr-sec2);
+}
+
+
+
+/* about section */
+
+.bmichart{
+    border: 1px solid grey;
+    border-bottom: 2px double var(--clr-sec2);
+     border-top: 2px double var(--clr-sec1);
+/* margin-top: 2rem; */
+margin-bottom: 1.5rem;
+width: 80%;
+
+
+}
+
+
+figcaption{
+    font-size:2rem;
+    text-align: center;
+}
+
+.attribution-link{
+    color:var(--clr-sec4);
+}
+
+.attribution-link:hover{
+    color:var(--clr-comp1)
+}
+
+/* FAQ section */
+#FAQ>div{
+    font-size:2rem;
+}
+
+#faqcontainer{
+    margin-top: 10rem;
+}
+
+.card-header{
+    background-color: var(--clr-pri6);
+       
+
+   
+}
+
+
+
+.card-header:hover{
+       background-color:rgb(225, 223, 223);
+}
+
+.btn-link{
+    font-size: 3rem;
+    color:rgb(225, 223, 223);
+    background-color:var(--clr-pri6);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-link:hover{
+     background-color:rgb(225, 223, 223);
+ color:var(--clr-pri6);
+ text-decoration: underline  var(--clr-sec2)
+}
+
+/* Calculate Section */
+#calculate{
+    margin-bottom: 5rem;
+}
+
+label{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    display:block;
+    font-size:3.5rem;
+    font-weight: 450;
+
+}
+
+#calculate-btn{
+     border: 2px solid var(--clr-comp1);
+     border-radius: 20px;
+    margin-top: 4rem;
+background-color: var(--clr-pri6);
+color:var(--clr-comp2);
+
+text-transform: uppercase;
+font-size: 2rem;
+}
+
+#calculate-btn:hover{
+   border: 2px solid var(--clr-pri6);
+    background-color: var(--clr-comp2);
+    border-radius: 25px;
+    transition: all 1s;
+color:var(--clr-pri6);
+}
+
+input[type=number]{
+    font-size: 2rem;
+    width: 60%;
+    border-radius:55px;
+}
+
+small{
+    font-size: 1.5rem;
+}
+
+#output{
+    margin-top: 2.1rem;
+}
+
+/* footer styling */
+#footer{
+border-top: 1px solid;
+border-image-source:  linear-gradient(90deg,#d56c00 0%, #ffff00 40%, #ff8100 80%);
+border-image-slice: 4;
+
+    font-size:1.8rem;
+    text-align: center;
+    background-color: var(--clr-pri5);
+}
+
+/* scroll class */
+
+.scrolled{
+
+     background-color: var(--clr-pri5);
+     border-bottom:1px solid var(--clr-sec2) ;
+     transition: background-color 250ms;
+}
+
+/* media queries */
+
+@media (max-width:500px){
+    h2{
+        font-size: 5rem;
+    }
+
+    input[type=text]{
+    width: 90%;
+    border-radius:55px;
+}
+}
